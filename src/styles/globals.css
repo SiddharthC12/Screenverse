@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-midnight: #101116;
+  --color-charcoal: #1D2028;
+  --color-gold: #C9A45C;
+  --color-gold-light: #E5BE72;
+  --color-ivory: #F5F3EE;
+  --color-muted: #85858F;
+}
+
+/* Custom Cinematic Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #101116;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2C303D;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #C9A45C;
+}
+
+/* Reduced motion accessibility */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  ::before,
+  ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Base custom utility styles */
+@layer components {
+  .btn-gold {
+    @apply inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-lg font-medium text-sm text-midnight bg-gold hover:bg-gold-light transition-all duration-200 shadow-md hover:shadow-gold-glow active:scale-[0.98];
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-lg font-medium text-sm text-ivory bg-transparent border border-charcoal-border hover:border-gold hover:text-gold transition-all duration-200 active:scale-[0.98];
+  }
+
+  .card-cinematic {
+    @apply bg-charcoal-card border border-charcoal-border/70 rounded-xl transition-all duration-300;
+  }
+
+  .text-gold-gradient {
+    @apply bg-gradient-to-r from-gold via-gold-light to-gold bg-clip-text text-transparent;
+  }
+
+  .badge-genre {
+    @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-charcoal border border-charcoal-border text-ivory-muted;
+  }
+}

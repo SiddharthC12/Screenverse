@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <rect width="64" height="64" rx="14" fill="#101116"/>
+  <rect x="1" y="1" width="62" height="62" rx="13" stroke="#C9A45C" stroke-opacity="0.3" stroke-width="2"/>
+  <!-- Film reel / S icon -->
+  <path d="M20 18C20 15.7909 21.7909 14 24 14H40C42.2091 14 44 15.7909 44 18V26C44 28.2091 42.2091 30 40 30H24C21.7909 30 20 31.7909 20 34V46C20 48.2091 21.7909 50 24 50H40C42.2091 50 44 48.2091 44 46" stroke="#C9A45C" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="26" cy="22" r="2.5" fill="#E5BE72"/>
+  <circle cx="38" cy="42" r="2.5" fill="#E5BE72"/>
+  <polygon points="30,28 36,32 30,36" fill="#C9A45C"/>
+</svg>
